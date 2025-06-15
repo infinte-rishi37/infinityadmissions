@@ -296,7 +296,7 @@ const Login: React.FC = () => {
           </div>
 
           {!isRegistering && (
-            <div className="text-center">
+            <div className="text-center invisible">
               <p className="text-sm text-gray-600">
                 Demo credentials:<br />
                 Admin: admin@infinityeducation.com / admin123<br />
