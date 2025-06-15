@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { GraduationCap, Menu, X, Bell } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import logo from '../../../assets/logo.png';
+
 
 const Header: React.FC = () => {
   const location = useLocation();
@@ -28,12 +30,13 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
+            {/* <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
               <GraduationCap className="h-6 w-6 text-white" />
-            </div>
+            </div> */}
+            <img src={logo} alt="Infinity Education Logo" className="h-8 w-16" />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Infinity Education</h1>
-              <p className="text-xs text-gray-500 -mt-1">Middleware Service</p>
+              <h1 className="text-xl font-bold text-gray-900">Infinity Admission</h1>
+              {/* <p className="text-xs text-gray-500 -mt-1">Middleware Service</p> */}
             </div>
           </Link>
 
